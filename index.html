@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Rent a Car | Premium Vehicle Rental Services</title>
+    <meta name="description" content="Luxury car rental service in Khukha, Dina. High-end fleet including SUVs, Luxury Sedans, and Economy cars. Book your premium journey today.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <a href="#" class="logo">FRIENDS<span>RENTAL</span></a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#fleet">Our Fleet</a>
+            <a href="#booking">Booking</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="#booking" class="btn btn-secondary" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Book Now</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-tagline" style="color: var(--accent-gold);">Managed by Ali | Reliable Service</span>
+            <h1>Your Journey, <br>Our Priority</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2.5rem;">Experience the safety and comfort of Friends Rent a Car. Providing the best travel solutions in Dina and beyond with our well-maintained local fleet.</p>
+            <div class="cta-group">
+                <a href="#booking" class="btn btn-primary">Book Your Car Now</a>
+                <a href="#fleet" class="btn btn-secondary">Explore Fleet</a>
+            </div>
+        </div>
+        <div class="hero-image reveal" style="filter: none;">
+            <img src="assets/hero_local.jpg" alt="Friends Rent a Car Local Corolla" style="border-radius: 20px; box-shadow: var(--shadow);">
+        </div>
+    </section>
+
+    <section class="booking-section" id="booking" style="background: var(--bg-soft);">
+        <div class="glass booking-card reveal">
+            <div class="section-head" style="margin-bottom: 2rem; text-align: left;">
+                <h3 style="font-size: 1.5rem; color: var(--accent);">Reserve Your Vehicle</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Quick booking with Ali - Reliable & Professional.</p>
+            </div>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label>Pickup Date</label>
+                    <input type="date" required style="color: #000; border-color: #ddd;">
+                </div>
+                <div class="form-group">
+                    <label>Return Date</label>
+                    <input type="date" required style="color: #000; border-color: #ddd;">
+                </div>
+                <div class="form-group">
+                    <label>Select Car Model</label>
+                    <select required style="color: #000; border-color: #ddd;">
+                        <option value="">Choose a car...</option>
+                        <option value="corolla_gli">Toyota Corolla GLI</option>
+                        <option value="corolla_altis">Toyota Corolla Altis</option>
+                        <option value="corolla_xli">Toyota Corolla XLI</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Check Availability</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="fleet-section" id="fleet">
+        <div class="section-head">
+            <span class="hero-tagline" style="color: var(--accent-gold);">Featured Selection</span>
+            <h2 style="color: var(--accent);">Our Trusted Fleet</h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Authentic, well-maintained vehicles ready for your travels in Dina and surrounding areas.</p>
+        </div>
+
+        <div class="fleet-grid">
+            <div class="car-card glass">
+                <div class="car-image" style="background: #fdfdfd; padding: 0;">
+                    <img src="assets/fleet_local.jpg" alt="Toyota Corolla Local" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="car-info">
+                    <span class="car-cat" style="color: var(--accent-gold);">PREMIUM SEDAN</span>
+                    <h3 class="car-name">Toyota Corolla GLI</h3>
+                    <div class="car-specs">
+                        <div class="spec"><i class="fa-solid fa-users"></i> 5 Seats</div>
+                        <div class="spec"><i class="fa-solid fa-gear"></i> Manual/Auto</div>
+                        <div class="spec"><i class="fa-solid fa-snowflake"></i> AC</div>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price">From <span style="color: var(--accent);">PKR 5,000</span>/day</div>
+                        <a href="#booking" class="btn btn-secondary" style="padding: 0.6rem 1.2rem; font-size: 0.8rem;">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card glass">
+                <div class="car-image" style="background: #fdfdfd; padding: 0;">
+                    <img src="assets/fleet_corolla.jpg" alt="Toyota Corolla Showroom" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="car-info">
+                    <span class="car-cat" style="color: var(--accent-gold);">EXECUTIVE SEDAN</span>
+                    <h3 class="car-name">Toyota Corolla Altis</h3>
+                    <div class="car-specs">
+                        <div class="spec"><i class="fa-solid fa-users"></i> 5 Seats</div>
+                        <div class="spec"><i class="fa-solid fa-gear"></i> Automatic</div>
+                        <div class="spec"><i class="fa-solid fa-snowflake"></i> AC</div>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price">From <span style="color: var(--accent);">PKR 5,000</span>/day</div>
+                        <a href="#booking" class="btn btn-secondary" style="padding: 0.6rem 1.2rem; font-size: 0.8rem;">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card glass">
+                <div class="car-image" style="background: #fdfdfd; padding: 0;">
+                    <img src="assets/hero_local.jpg" alt="Toyota Corolla Local View" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="car-info">
+                    <span class="car-cat" style="color: var(--accent-gold);">RELIABLE SEDAN</span>
+                    <h3 class="car-name">Toyota Corolla XLI</h3>
+                    <div class="car-specs">
+                        <div class="spec"><i class="fa-solid fa-users"></i> 5 Seats</div>
+                        <div class="spec"><i class="fa-solid fa-gear"></i> Manual</div>
+                        <div class="spec"><i class="fa-solid fa-snowflake"></i> AC</div>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price">From <span style="color: var(--accent);">PKR 5,000</span>/day</div>
+                        <a href="#booking" class="btn btn-secondary" style="padding: 0.6rem 1.2rem; font-size: 0.8rem;">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us" id="why-us">
+        <div class="section-head">
+            <span class="hero-tagline">Trust & Excellence</span>
+            <h2>Why Choose Friends Rental</h2>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card glass">
+                <div class="feat-icon"><i class="fa-solid fa-headset"></i></div>
+                <h3>24/7 Support</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Our team is available around the clock to assist you with any inquiries or emergencies.</p>
+            </div>
+            <div class="feature-card glass">
+                <div class="feat-icon"><i class="fa-solid fa-car-on"></i></div>
+                <h3>Well Maintained</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Every vehicle undergoes rigorous safety checks and premium detailing before every rental.</p>
+            </div>
+            <div class="feature-card glass">
+                <div class="feat-icon"><i class="fa-solid fa-tags"></i></div>
+                <h3>Affordable Rates</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Competitive pricing without compromising on the luxury and quality of your experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-info">
+                <a href="#" class="logo" style="display: block; margin-bottom: 1.5rem;">FRIENDS<span>RENTAL</span></a>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Premium car rental services providing reliability, comfort, and executive travel solutions.</p>
+            </div>
+            
+            <div class="footer-info">
+                <h3>Contact & Location</h3>
+                <div class="contact-brand-box">
+                    <div class="contact-details">
+                        <div class="contact-item highlight">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="numbers">
+                                <span>0311 5988 404</span>
+                                <span>0313 059 6916</span>
+                            </div>
+                        </div>
+                        <div class="contact-item highlight">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Khukha, Dina, Pakistan</span>
+                        </div>
+                        <div class="contact-item highlight">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <span>Ali</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <h3>Fast Links</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem;">
+                    <li><a href="#fleet" style="color: var(--text-muted); text-decoration: none;">Explore Cars</a></li>
+                    <li><a href="#booking" style="color: var(--text-muted); text-decoration: none;">Make Reservation</a></li>
+                    <li><a href="#" style="color: var(--text-muted); text-decoration: none;">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Friends Rent a Car. Designed by Ali. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
