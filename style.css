@@ -411,6 +411,21 @@ footer {
     font-size: 0.85rem;
 }
 
+.stars i {
+    color: var(--accent-gold);
+    font-size: 0.9rem;
+    margin-right: 2px;
+}
+
+.testimonials .feature-card {
+    transition: var(--transition);
+}
+
+.testimonials .feature-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-gold);
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {

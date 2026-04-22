@@ -42,22 +42,33 @@ revealElements.forEach(el => {
     observer.observe(el);
 });
 
-// Booking Form Submission Handler (Simulation)
+// Booking Form Submission Handler (WhatsApp Integration)
 const bookingForm = document.querySelector('.booking-form');
 if (bookingForm) {
     bookingForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        const submitBtn = bookingForm.querySelector('button');
-        const originalText = submitBtn.innerText;
         
-        submitBtn.innerText = 'Checking availability...';
-        submitBtn.disabled = true;
+        const pickupDate = bookingForm.querySelectorAll('input')[0].value;
+        const returnDate = bookingForm.querySelectorAll('input')[1].value;
+        const carModel = bookingForm.querySelector('select').options[bookingForm.querySelector('select').selectedIndex].text;
+        
+        const phoneNumber = '923115988404'; // Official business number
+        const message = `Hello Friends Rent a Car, I would like to book a ${carModel}.\n\n` + 
+                       `Pickup: ${pickupDate}\n` + 
+                       `Return: ${returnDate}\n\n` +
+                       `Please let me know the availability. Thanks!`;
+        
+        const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        
+        // Simulating processing
+        const btn = bookingForm.querySelector('button');
+        btn.innerText = 'Redirecting to WhatsApp...';
+        btn.disabled = true;
         
         setTimeout(() => {
-            alert('Booking request received! Ali will contact you shortly at 0311 5988 404 to confirm your reservation.');
-            submitBtn.innerText = originalText;
-            submitBtn.disabled = false;
-            bookingForm.reset();
-        }, 2000);
+            window.open(waUrl, '_blank');
+            btn.innerText = 'Check Availability';
+            btn.disabled = false;
+        }, 1000);
     });
 }
